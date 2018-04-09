@@ -67,10 +67,6 @@ For the purpose of this demo we are going to use an Angular application built by
 
     ![Get Function URL from the Azure portal](https://i.imgur.com/LCl1kNN.gif)
 
-1.  In the Azure portal go to your newly published function app and copy URL
-
-    ![Get Function URL from the Azure portal](https://i.imgur.com/LCl1kNN.gif)
-
 1.  In your Angular app go to `hero.service.ts` and configure your endpoint to point to the newly deployed function:
 
     ```javascript
