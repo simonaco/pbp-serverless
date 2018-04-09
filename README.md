@@ -31,25 +31,25 @@ For the purpose of this demo we are going to use an Angular application built by
 
 1.  Configure Cosmos DB server settings
 
-Go to `local.settings.json` in the project root and update it with your Cosmos DB settings. Replace the database name key, and port with your specific configuration.
+    Go to `local.settings.json` in the project root and update it with your Cosmos DB settings. If the file doesn't exist, make sure to create it. Replace the database name, password and port with your specific configuration.
 
-```javascript
- // local.settings.json
-{
-"IsEncrypted": false,
-    "Values": {
-        "AzureWebJobsStorage": "",
-        "CosmosDBURL": "mongodb://<your-HOST-goes-here>:<your-PORT-goes-here>/?ssl=true",
-        "CosmosDBUser": "<your-USERNAME-goes-here>",
-        "CosmosDBPass": "<your-PASSWORD-goes-here>",
-        "CosmosDB": "<your-cosmos-db-name-goes-here>"
-    },
-    "Host": {
-        "LocalHttpPort": 7071,
-        "CORS": "*"
+    ```javascript
+    // local.settings.json
+    {
+    "IsEncrypted": false,
+        "Values": {
+            "AzureWebJobsStorage": "",
+            "CosmosDBURL": "mongodb://<your-HOST-goes-here>:<your-PORT-goes-here>/?ssl=true",
+            "CosmosDBUser": "<your-USERNAME-goes-here>",
+            "CosmosDBPass": "<your-PASSWORD-goes-here>",
+            "CosmosDB": "<your-cosmos-db-name-goes-here>"
+        },
+        "Host": {
+            "LocalHttpPort": 7071,
+            "CORS": "*"
+        }
     }
-}
-```
+    ```
 
 1.  Go to [Angular Cosmos DB](https://github.com/johnpapa/angular-cosmosdb) and follow steps to get started and run the app there
 
@@ -57,13 +57,13 @@ Go to `local.settings.json` in the project root and update it with your Cosmos D
 
 1.  Open the application in VS Code and run application
 
-![Run Azure Functions locally in VS Code](https://i.imgur.com/GfjuEKD.gif)
+    ![Run Azure Functions locally in VS Code](https://i.imgur.com/GfjuEKD.gif)
 
 1.  Assuming you went through the steps of installing and running your Angular application locally now open the app in VS Code and go to `hero.service.ts` and configure your endpoint to be the newly created functions:
 
-```javascript
-const api = 'http://localhost:7071/api';
-```
+    ```javascript
+    const api = 'http://localhost:7071/api';
+    ```
 
 ## Publish your API to the cloud
 
@@ -71,17 +71,17 @@ const api = 'http://localhost:7071/api';
 
 1.  In the Azure portal go to your newly published function app and copy URL
 
-![Get Function URL from the Azure portal](https://i.imgur.com/LCl1kNN.gif)
+    ![Get Function URL from the Azure portal](https://i.imgur.com/LCl1kNN.gif)
 
 1.  In the Azure portal go to your newly published function app and copy URL
 
-![Get Function URL from the Azure portal](https://i.imgur.com/LCl1kNN.gif)
+    ![Get Function URL from the Azure portal](https://i.imgur.com/LCl1kNN.gif)
 
 1.  In your Angular app go to `hero.service.ts` and configure your endpoint to point to the newly deployed function:
 
-```javascript
-const api = 'https://sicotin-serverless.azurewebsites.net/api';
-```
+    ```javascript
+    const api = 'https://sicotin-serverless.azurewebsites.net/api';
+    ```
 
 ---
 
