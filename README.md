@@ -6,12 +6,6 @@ For the purpose of this demo we are going to use an Angular application built by
 
 ## Requirements
 
-1.  Install the Angular CLI
-
-    ```bash
-    npm install -g @angular/cli
-    ```
-
 1.  Install the [Azure Functions for Visual Studio Code](https://aka.ms/vscode-azure-functions) extension
 
 ## Getting Started
