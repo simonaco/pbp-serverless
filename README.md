@@ -4,6 +4,8 @@ This project represents a fully serverless implementation for a CRUD (Create, Re
 
 For the purpose of this demo we are going to use an Angular application built by [John Papa](https://twitter.com/John_Papa). The code for this application is available on Github at [Angular Cosmos DB](https://github.com/johnpapa/angular-cosmosdb).
 
+You can watch John Papa and I talk about this project in this [Pluralsight course](https://aka.ms/pbp). 
+
 ## Requirements
 
 1.  Install the [Azure Functions for Visual Studio Code](https://aka.ms/vscode-azure-functions) extension
